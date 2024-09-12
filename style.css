@@ -1,0 +1,470 @@
+/* Global Styles */
+/* babsic  reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: #03002e;
+}
+
+.logo{
+    height: 50px;
+    max-width: 100%;
+    height: auto;
+}
+.pro {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #38b6ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #03002e;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:#f9f9f9;
+}
+
+/* Ensure the image stretches and maintains aspect ratio */
+section img {
+    width: 90%;        /* The image will stretch to fit the container's width */
+    height: auto;       /* Maintain aspect ratio to avoid distortion */
+    max-width: 1200px;    /* Ensure the image doesn’t exceed its container */
+    object-fit: cover;  /* Ensure the image fits within its container properly */
+    display: block;     /* Removes any extra space below the image */
+    border-radius: 10px;
+    display: block; 
+    margin: 0 auto;
+    object-fit: cover;/* Optional: adds rounded corners to the image */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    section img {
+        max-width: 100%; /* Ensures image scales down for smaller screens */
+    }
+}
+
+
+
+#social-media {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 2em;
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #38b6ff; /* Change this color to fit your theme */
+}
+
+
+section h2 {
+    color: #f4f4f4;
+}
+
+section ul li {
+    background-color: white;
+    background-position-x: 50%;
+    color: #03002e;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#skills ul, #experience .experience-item, #projects .project-item {
+    margin-bottom: 20px;
+}
+
+#skills ul li, #projects .project-item, #experience .experience-item {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer nav {
+    display: flex;
+    align-items: center; /* Adjusted from 'end' to 'center' */
+    justify-content: center; /* Centering the nav items */
+    padding: 10px 80px; /* Fixed comma to space */
+}
+
+footer nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex; /* Added to make sure list items are displayed in a row */
+    margin: 0; /* Added to remove default margin */
+}
+
+footer nav ul li {
+    display: inline; /* This is redundant since we use flex on the parent */
+    margin: 0 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #38b6ff;
+}
+
+.download-cv-section {
+    text-align: center;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 20px; /* Adds space between the buttons */
+}
+
+.download-btn {
+    background-color: #38b6ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 250px; 
+}
+
+.download-btn:hover {
+    background-color: black;
+}
+
+
+a {
+    color: #007BFF;
+}
+
+
+.music-section {
+    text-align: right;
+    margin: 7px 0;
+}
+
+#music-btn {
+    background-color: #186100;
+    color: white;
+    padding: 1px 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 2px;
+    width: 80px;
+}
+
+#music-btn:hover {
+    background-color: black;
+}
+
+section h4 {
+    color:white;
+    text-decoration: #fff;
+    font: 1em sans-serif;
+    
+}
+.background{
+    justify-content:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Modernized Skills & Expertise Section */
+.skills-section {
+    background: linear-gradient( #03002e);
+    color: #fff;
+    padding: px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures background stretches across the whole page */
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 500px;
+    width: 100%;
+}
+
+.skills-section ul li {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background for items */
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.skills-section ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.skills-section ul li strong {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 30px;
+    }
+    
+    .skills-section h2 {
+        font-size: 2em;
+    }
+    
+    .skills-section ul li {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+
+
+
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px #38b6ff;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.project h2 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+.project p {
+    color:#03002e;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.project ul {
+    list-style-type: disc;
+    padding-left: 2px;
+    margin: 10px 50px;
+    text-align: left;
+}
+
+.project li {
+    margin: 5px 0;
+    color: #444;
+}
+
+/* Download Button */
+.download-btns {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color:#03002e;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.download-btns:hover {
+    background-color: green;
+    transform: translateY(5px);
+    box-shadow: 0 8px 50px rgba(0, 255, 34, 0.792);
+
+}
+
+/* Hover Effect on Project */
+.project:hover {
+    transform: translateY(5px);
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .project h2 {
+        font-size: 1.5em;
+    }
+
+    .project p {
+        font-size: 1em;
+    }
+
+    .download-btns {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+.con {
+    font-size:50px;
+    font-style:normal;
+}
+
+.large-icons i {
+    font-size: 70px; 
+
+}
+
+.large-icons .social-link {
+    margin: 10px;
+}
+
+.small image{
+    width: 70%;  
+    height: 40px;
+
+}
+
+
+/* Experience Section */
+.experience-section {
+    padding: 60px 40px;
+    background-color: #03002e;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+
+/* Experience Section */
+.experience-section {
+    padding: 60px 20px;
+    background-color:#03002e;
+}
+
+.experience-section h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.experience-intro {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f8f8f8;
+    margin-bottom: 40px;
+}
+
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 40px 40px #38b6ff(0, 0, 0, 0.15);
+}
+
+.experience-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    color: #666;
+}
